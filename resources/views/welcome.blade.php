@@ -11,7 +11,7 @@
                     </label>
                 </div>
                 <div class="navbar">
-                    <img id="logo" src="{{ asset('/images/logo-jagoan-data.svg') }}" alt="Logo Jagoan Data"
+                    <img id="logo" src="{{ asset('/images/logo/logo-white.svg') }}" alt="Logo Jagoan Data"
                         class="h-8 w-auto">
                 </div>
             </div>
@@ -41,8 +41,8 @@
                 </ul>
             </div>
 
-            <main id="home" class="hero h-screen relative rounded-b-[50px]"
-                style="background-image: url({{ asset('images/hero-background.png') }});">
+            <main id="home" class="hero h-screen relative rounded-b-[55px]"
+                style="background-image: url({{ asset('images/hero/hero-background.png') }});">
 
                 <div class="hero-content text-white text-center ">
                     <div class="max-w-max">
@@ -56,9 +56,9 @@
                         </p>
                     </div>
                 </div>
-                <img class="absolute bottom-0 right-0" width="150"
+                <img class="absolute bottom-0 right-0 transform scale-x-[-1]" width="150"
                     src="{{ asset('images/vector/decor-for-hero.svg') }}"alt="">
-                <img class="absolute bottom-0 left-0 transform scale-x-[-1]" width="150"
+                <img class="absolute bottom-0 left-0 " width="150"
                     src="{{ asset('images/vector/decor-for-hero.svg') }}"alt="">
             </main>
             <section id="services" class="px-10 py-20 lg:px-20 lg:py-10">
@@ -66,7 +66,7 @@
                     Our Services
                 </h1>
                 <div class="card-wrap grid grid-cols-1 lg:grid-cols-3 gap-4">
-                    <div class="card-item rounded-xl bg-primaryColor-100 p-8 flex flex-col gap-y-4">
+                    <div class="card-item rounded-xl bg-primaryColor-100/50 p-8 flex flex-col gap-y-4">
                         <div class="card-item-title text-primaryColor-500 flex gap-x-2">
                             <span class="material-symbols-rounded">
                                 hub
@@ -78,7 +78,7 @@
                             bagi kota
                         </p>
                     </div>
-                    <div class="card-item rounded-xl bg-primaryColor-100 p-8 flex flex-col gap-y-4">
+                    <div class="card-item rounded-xl bg-primaryColor-100/50 p-8 flex flex-col gap-y-4">
                         <div class="card-item-title text-primaryColor-500 flex gap-x-2">
                             <span class="material-symbols-rounded">
                                 query_stats
@@ -90,7 +90,7 @@
                             data secara lebih efektif
                         </p>
                     </div>
-                    <div class="card-item rounded-xl bg-primaryColor-100 p-8 flex flex-col gap-y-4">
+                    <div class="card-item rounded-xl bg-primaryColor-100/50 p-8 flex flex-col gap-y-4">
                         <div class="card-item-title text-primaryColor-500 flex gap-x-2">
                             <span class="material-symbols-rounded">
                                 book_4_spark
@@ -148,8 +148,8 @@
             <section class="px-10 py-20 lg:px-20 lg:py-10">
                 <div class="box-wrapper flex gap-x-10 flex-col lg:flex-row">
                     <div
-                        class="box-item max-w-xs rounded-xl bg-primaryColor-100 p-8 flex flex-col justify-center align-middle gap-y-4 mt-48 mx-auto">
-                        <img src="{{ asset('/images/vector/vector-2.png') }}" alt="icon-1"
+                        class="box-item max-w-xs rounded-xl bg-primaryColor-100/50 p-8 flex flex-col justify-center align-middle gap-y-4 mt-48 mx-auto">
+                        <img src="{{ asset('/images/vector/people-1.png') }}" alt="people-1"
                             class="h-60 w-auto relative -mt-32 mx-auto">
                         <div class="box-item-title text-primaryColor-500 flex gap-x-2">
                             <h2 class="font-bold text-center">Unlock Your City’s Potential with Jagoan Data</h2>
@@ -161,9 +161,9 @@
                         </p>
                     </div>
                     <div
-                        class="box-item max-w-xs rounded-xl bg-primaryColor-100 p-8 flex flex-col justify-center align-middle gap-y-4 mt-48 mx-auto">
-                        <img src="{{ asset('/images/vector/vector-3.png') }}" alt="icon-1"
-                            class="h-60 w-auto relative -mt-32 mx-auto scale-x-[-1]">
+                        class="box-item max-w-xs rounded-xl bg-primaryColor-100/50 p-8 flex flex-col justify-center align-middle gap-y-4 mt-48 mx-auto">
+                        <img src="{{ asset('/images/vector/people-2.png') }}" alt="people-2"
+                            class="h-60 w-auto relative -mt-32 mx-auto">
                         <div class="box-item-title text-primaryColor-500 flex gap-x-2">
                             <h2 class="font-bold text-center">Expert Guidance from Industry Professionals</h2>
                         </div>
@@ -174,8 +174,8 @@
                         </p>
                     </div>
                     <div
-                        class="box-item max-w-xs rounded-xl bg-primaryColor-100 p-8 flex flex-col justify-center align-middle gap-y-4 mt-48  mx-auto">
-                        <img src="{{ asset('/images/vector/vector-4.png') }}" alt="icon-1"
+                        class="box-item max-w-xs rounded-xl bg-primaryColor-100/50 p-8 flex flex-col justify-center align-middle gap-y-4 mt-48  mx-auto">
+                        <img src="{{ asset('/images/vector/people-3.png') }}" alt="people-3"
                             class="h-60 w-auto relative -mt-32 mx-auto">
                         <div class="box-item-title text-primaryColor-500 flex gap-x-2">
                             <h2 class="font-bold text-center">Simple and Efficient Business Processes</h2>
@@ -187,9 +187,9 @@
                         </p>
                     </div>
                     <div
-                        class="box-item max-w-xs rounded-xl bg-primaryColor-100 p-8 flex flex-col justify-center align-middle gap-y-4 mt-48 mx-auto">
-                        <img src="{{ asset('/images/vector/vector-1.png') }}" alt="icon-1"
-                            class="h-60 w-auto relative -mt-32 mx-auto transform scale-x-[-1]">
+                        class="box-item max-w-xs rounded-xl bg-primaryColor-100/50 p-8 flex flex-col justify-center align-middle gap-y-4 mt-48 mx-auto">
+                        <img src="{{ asset('/images/vector/people-4.png') }}" alt="people-4"
+                            class="h-60 w-auto relative -mt-32 mx-auto">
                         <div class="box-item-title text-primaryColor-500 flex gap-x-2">
                             <h2 class="font-bold text-center"> Affordable Solutions for Every City</h2>
                         </div>
@@ -728,8 +728,8 @@
             const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
             // URL logo ketika navbar dalam keadaan scroll
-            const logoScrolled = "{{ asset('/images/logo-jagoan-data-real.svg') }}"; // Logo baru saat discroll
-            const logoDefault = "{{ asset('/images/logo-jagoan-data.svg') }}"; // Logo default sebelum discroll
+            const logoScrolled = "{{ asset('/images/logo/logo.png') }}"; // Logo baru saat discroll
+            const logoDefault = "{{ asset('/images/logo/logo-white.svg') }}"; // Logo default sebelum discroll
 
             // Menambahkan event scroll untuk memeriksa scroll dan mengubah tampilan elemen
             window.onscroll = function() {
