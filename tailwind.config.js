@@ -19,6 +19,7 @@ module.exports = {
                     900: "#880A4D", // Sangat gelap
                 },
                 darkColor: "#101820",
+                grayColor: "#F6F4F3",
             },
             keyframes: {
                 "infinite-scroll-up": {
