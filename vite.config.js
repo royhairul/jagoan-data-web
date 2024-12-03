@@ -8,4 +8,9 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    build: {
+        manifest: true, // Pastikan manifest diaktifkan
+        outDir: "public/build", // Direktori output
+    },
+    base: "/", // Sesuaikan base path
 });
