@@ -211,223 +211,39 @@
                             memaksimalkan potensi data untuk pengambilan keputusan yang lebih cerdas dan efisien.
                         </p>
                     </div>
-                    <div class="tile-item relative">
-                        {{-- Part of Image Profile --}}
-                        <img src="{{ asset('/images/teams/foto-nama-1.png') }}" alt=""
-                            class="tile-item-image w-screen">
-                        <div class="absolute z-10 bottom-5 right-0 flex flex-col justify-end">
-                            {{-- Part of Name --}}
-                            <div class="tile-item-name bg-white px-10 py-2">
-                                <h1 class="text-darkColor font-bold text-lg">Dias Satria</h1>
-                                <p class="text-primaryColor-500 font-semibold text-xs">Co-Founder</p>
-                            </div>
+                    @foreach ($teams as $member)
+                        <div class="tile-item relative">
+                            {{-- Part of Image Profile --}}
+                            <img src="{{ asset('/storage/' . $member->image) }}" alt=""
+                                class="tile-item-image w-screen">
+                            <div class="absolute z-10 bottom-5 right-0 flex flex-col justify-end">
+                                {{-- Part of Name --}}
+                                <div class="tile-item-name bg-white px-10 py-2">
+                                    <h1 class="text-darkColor font-bold text-lg">{{ $member->name }}</h1>
+                                    <p class="text-primaryColor-500 font-semibold text-xs">{{ $member->position }}</p>
+                                </div>
 
-                            {{-- Part of Social Media --}}
-                            <div class="tile-item-social flex justify-end gap-x-2 my-2 mr-4">
-                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/instagram.svg') }}" alt="Instagram Icon"
-                                        width="24">
-                                </a>
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/facebook.svg') }}" alt="Facebook Icon"
-                                        width="24">
-                                </a>
-                                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/linkedin.svg') }}" alt="LinkedIn Icon"
-                                        width="24">
-                                </a>
+                                {{-- Part of Social Media --}}
+                                <div class="tile-item-social flex justify-end gap-x-2 my-2 mr-4">
+                                    <a href="{{ $member->link_instagram }}" target="_blank" rel="noopener noreferrer">
+                                        <img src="{{ asset('/images/icons/instagram.svg') }}" alt="Instagram Icon"
+                                            width="24">
+                                    </a>
+                                    <a href="{{ $member->link_facebook }}" target="_blank" rel="noopener noreferrer">
+                                        <img src="{{ asset('/images/icons/facebook.svg') }}" alt="Facebook Icon"
+                                            width="24">
+                                    </a>
+                                    <a href="{{ $member->link_linkedin }}" target="_blank" rel="noopener noreferrer">
+                                        <img src="{{ asset('/images/icons/linkedin.svg') }}" alt="LinkedIn Icon"
+                                            width="24">
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute -z-1 h-64 w-64 bottom-0 right-0 bg-gradient-to-tl from-10% from-primaryColor-400 via-30% via-transparent to-90% to-transparent">
                             </div>
                         </div>
-                        <div
-                            class="absolute -z-1 h-64 w-64 bottom-0 right-0 bg-gradient-to-tl from-10% from-primaryColor-400 via-30% via-transparent to-90% to-transparent">
-                        </div>
-                    </div>
-                    <div class="tile-item relative">
-                        {{-- Part of Image Profile --}}
-                        <img src="{{ asset('/images/teams/foto-nama-1.png') }}" alt=""
-                            class="tile-item-image w-screen">
-                        <div class="absolute z-10 bottom-5 right-0 flex flex-col justify-end">
-                            {{-- Part of Name --}}
-                            <div class="tile-item-name bg-white px-10 py-2">
-                                <h1 class="text-darkColor font-bold text-lg">Dias Satria</h1>
-                                <p class="text-primaryColor-500 font-semibold text-xs">Co-Founder</p>
-                            </div>
-
-                            {{-- Part of Social Media --}}
-                            <div class="tile-item-social flex justify-end gap-x-2 my-2 mr-4">
-                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/instagram.svg') }}" alt="Instagram Icon"
-                                        width="24">
-                                </a>
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/facebook.svg') }}" alt="Facebook Icon"
-                                        width="24">
-                                </a>
-                                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/linkedin.svg') }}" alt="LinkedIn Icon"
-                                        width="24">
-                                </a>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute -z-1 h-64 w-64 bottom-0 right-0 bg-gradient-to-tl from-10% from-primaryColor-400 via-30% via-transparent to-90% to-transparent">
-                        </div>
-                    </div>
-                    <div class="tile-item relative">
-                        {{-- Part of Image Profile --}}
-                        <img src="{{ asset('/images/teams/foto-nama-1.png') }}" alt=""
-                            class="tile-item-image w-screen">
-                        <div class="absolute z-10 bottom-5 right-0 flex flex-col justify-end">
-                            {{-- Part of Name --}}
-                            <div class="tile-item-name bg-white px-10 py-2">
-                                <h1 class="text-darkColor font-bold text-lg">Dias Satria</h1>
-                                <p class="text-primaryColor-500 font-semibold text-xs">Co-Founder</p>
-                            </div>
-
-                            {{-- Part of Social Media --}}
-                            <div class="tile-item-social flex justify-end gap-x-2 my-2 mr-4">
-                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/instagram.svg') }}" alt="Instagram Icon"
-                                        width="24">
-                                </a>
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/facebook.svg') }}" alt="Facebook Icon"
-                                        width="24">
-                                </a>
-                                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/linkedin.svg') }}" alt="LinkedIn Icon"
-                                        width="24">
-                                </a>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute -z-1 h-64 w-64 bottom-0 right-0 bg-gradient-to-tl from-10% from-primaryColor-400 via-30% via-transparent to-90% to-transparent">
-                        </div>
-                    </div>
-                    <div class="tile-item relative">
-                        {{-- Part of Image Profile --}}
-                        <img src="{{ asset('/images/teams/foto-nama-1.png') }}" alt=""
-                            class="tile-item-image w-screen">
-                        <div class="absolute z-10 bottom-5 right-0 flex flex-col justify-end">
-                            {{-- Part of Name --}}
-                            <div class="tile-item-name bg-white px-10 py-2">
-                                <h1 class="text-darkColor font-bold text-lg">Dias Satria</h1>
-                                <p class="text-primaryColor-500 font-semibold text-xs">Co-Founder</p>
-                            </div>
-
-                            {{-- Part of Social Media --}}
-                            <div class="tile-item-social flex justify-end gap-x-2 my-2 mr-4">
-                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/instagram.svg') }}" alt="Instagram Icon"
-                                        width="24">
-                                </a>
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/facebook.svg') }}" alt="Facebook Icon"
-                                        width="24">
-                                </a>
-                                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/linkedin.svg') }}" alt="LinkedIn Icon"
-                                        width="24">
-                                </a>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute -z-1 h-64 w-64 bottom-0 right-0 bg-gradient-to-tl from-10% from-primaryColor-400 via-30% via-transparent to-90% to-transparent">
-                        </div>
-                    </div>
-                    <div class="tile-item relative">
-                        {{-- Part of Image Profile --}}
-                        <img src="{{ asset('/images/teams/foto-nama-1.png') }}" alt=""
-                            class="tile-item-image w-screen">
-                        <div class="absolute z-10 bottom-5 right-0 flex flex-col justify-end">
-                            {{-- Part of Name --}}
-                            <div class="tile-item-name bg-white px-10 py-2">
-                                <h1 class="text-darkColor font-bold text-lg">Dias Satria</h1>
-                                <p class="text-primaryColor-500 font-semibold text-xs">Co-Founder</p>
-                            </div>
-
-                            {{-- Part of Social Media --}}
-                            <div class="tile-item-social flex justify-end gap-x-2 my-2 mr-4">
-                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/instagram.svg') }}" alt="Instagram Icon"
-                                        width="24">
-                                </a>
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/facebook.svg') }}" alt="Facebook Icon"
-                                        width="24">
-                                </a>
-                                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/linkedin.svg') }}" alt="LinkedIn Icon"
-                                        width="24">
-                                </a>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute -z-1 h-64 w-64 bottom-0 right-0 bg-gradient-to-tl from-10% from-primaryColor-400 via-30% via-transparent to-90% to-transparent">
-                        </div>
-                    </div>
-                    <div class="tile-item relative">
-                        {{-- Part of Image Profile --}}
-                        <img src="{{ asset('/images/teams/foto-nama-1.png') }}" alt=""
-                            class="tile-item-image w-screen">
-                        <div class="absolute z-10 bottom-5 right-0 flex flex-col justify-end">
-                            {{-- Part of Name --}}
-                            <div class="tile-item-name bg-white px-10 py-2">
-                                <h1 class="text-darkColor font-bold text-lg">Dias Satria</h1>
-                                <p class="text-primaryColor-500 font-semibold text-xs">Co-Founder</p>
-                            </div>
-
-                            {{-- Part of Social Media --}}
-                            <div class="tile-item-social flex justify-end gap-x-2 my-2 mr-4">
-                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/instagram.svg') }}" alt="Instagram Icon"
-                                        width="24">
-                                </a>
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/facebook.svg') }}" alt="Facebook Icon"
-                                        width="24">
-                                </a>
-                                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/linkedin.svg') }}" alt="LinkedIn Icon"
-                                        width="24">
-                                </a>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute -z-1 h-64 w-64 bottom-0 right-0 bg-gradient-to-tl from-10% from-primaryColor-400 via-30% via-transparent to-90% to-transparent">
-                        </div>
-                    </div>
-                    <div class="tile-item relative">
-                        {{-- Part of Image Profile --}}
-                        <img src="{{ asset('/images/teams/foto-nama-1.png') }}" alt=""
-                            class="tile-item-image w-screen">
-                        <div class="absolute z-10 bottom-5 right-0 flex flex-col justify-end">
-                            {{-- Part of Name --}}
-                            <div class="tile-item-name bg-white px-10 py-2">
-                                <h1 class="text-darkColor font-bold text-lg">Dias Satria</h1>
-                                <p class="text-primaryColor-500 font-semibold text-xs">Co-Founder</p>
-                            </div>
-
-                            {{-- Part of Social Media --}}
-                            <div class="tile-item-social flex justify-end gap-x-2 my-2 mr-4">
-                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/instagram.svg') }}" alt="Instagram Icon"
-                                        width="24">
-                                </a>
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/facebook.svg') }}" alt="Facebook Icon"
-                                        width="24">
-                                </a>
-                                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ asset('/images/icons/linkedin.svg') }}" alt="LinkedIn Icon"
-                                        width="24">
-                                </a>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute -z-1 h-64 w-64 bottom-0 right-0 bg-gradient-to-tl from-10% from-primaryColor-400 via-30% via-transparent to-90% to-transparent">
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
                 {{-- decoration --}}
                 <img src="{{ asset('/images/vector/decor-for-teams.svg') }}"
@@ -450,104 +266,61 @@
                 <div class="mt-4">
                     <div class="w-full swiper mySwiper">
                         <div class="swiper-wrapper">
-                            {{-- First Item Blog --}}
-                            {{-- For Large Devices --}}
-                            <div class="swiper-slide !flex-none !w-1/2 relative overflow-hidden !hidden lg:!block">
-                                <img src="{{ asset('/images/blogs/example-1.png') }}" alt="">
-                                <div class="article-info absolute z-10 left-0 bottom-5">
-                                    <p class="text-white w-max bg-primaryColor-500 font-medium pl-8 py-2 pr-4 text-sm">
-                                        2
-                                        Desember
-                                        2025
-                                    </p>
-                                    <h2 class="mt-2 text-white pl-8 font-semibold text-2xl">GIS Mendapatkan Kunci
-                                        Keberhasilan Satu Data di Bidang Pertanian</h2>
-                                </div>
-                                <div
-                                    class="absolute -z-1 h-64 w-full bottom-0 right-0 bg-gradient-to-t from-10% from-darkColor/90 via-50% via-transparent to-90% to-transparent">
-                                </div>
-                            </div>
-                            {{-- For Small Devices --}}
-                            <div class="block lg:!hidden swiper-slide">
-                                <div class="relative">
-                                    <img src="{{ asset('/images/blogs/example-1.png') }}" alt="">
-                                    <div class="article-info absolute z-10 left-0 bottom-0">
-                                        <p class="text-white w-max bg-primaryColor-500 font-medium px-4 py-2 text-sm">
-                                            1 Desember 2025
-                                        </p>
+                            @foreach ($blogs as $blog)
+                                @if ($loop->first)
+                                    {{-- First Item Blog --}}
+                                    {{-- For Large Devices --}}
+                                    <div
+                                        class="swiper-slide !flex-none !w-1/2 relative !overflow-hidden !hidden lg:!block">
+                                        <img src="{{ asset('/storage/' . $blog->image) }}" class="w-full"
+                                            alt="">
+                                        <div class="article-info absolute z-10 left-0 bottom-5">
+                                            <p
+                                                class="text-white w-max bg-primaryColor-500 font-medium pl-8 py-2 pr-4 text-sm">
+                                                {{ \Carbon\Carbon::parse($blog->created_at)->format('j F Y') }}
+                                            </p>
+                                            <h2 class="mt-2 text-white pl-8 font-semibold text-2xl">{{ $blog->title }}
+                                            </h2>
+                                        </div>
+                                        <div
+                                            class="absolute -z-1 h-64 w-full bottom-0 right-0 bg-gradient-to-t from-10% from-darkColor/90 via-50% via-transparent to-90% to-transparent">
+                                        </div>
                                     </div>
-                                </div>
-                                <h2 class="mt-2 text-darkColor font-semibold text-xl">
-                                    GIS Mendapatkan Kunci Keberhasilan Satu Data di Bidang Pertanian
-                                </h2>
-                            </div>
-
-                            {{-- Another Item Blog --}}
-                            <div class="swiper-slide">
-                                <div class="relative">
-                                    <img src="{{ asset('/images/blogs/example-1.png') }}" alt="">
-                                    <div class="article-info absolute z-10 left-0 bottom-0">
-                                        <p class="text-white w-max bg-primaryColor-500 font-medium px-4 py-2 text-sm">
-                                            2 Desember 2025
-                                        </p>
+                                    {{-- For Small Devices --}}
+                                    <div class="block lg:!hidden swiper-slide">
+                                        <div class="relative">
+                                            <img src="{{ asset('/storage/' . $blog->image) }}" alt=""
+                                                class="w-full">
+                                            <div class="article-info absolute z-10 left-0 bottom-0">
+                                                <p
+                                                    class="text-white w-max bg-primaryColor-500 font-medium px-4 py-2 text-sm">
+                                                    {{ \Carbon\Carbon::parse($blog->created_at)->format('j F Y') }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h2 class="mt-2 text-darkColor font-semibold text-xl">
+                                            {{ $blog->title }}
+                                        </h2>
                                     </div>
-                                </div>
-                                <h2 class="mt-2 text-darkColor font-semibold text-xl">
-                                    GIS Mendapatkan Kunci Keberhasilan Satu Data di Bidang Pertanian
-                                </h2>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="relative">
-                                    <img src="{{ asset('/images/blogs/example-1.png') }}" alt="">
-                                    <div class="article-info absolute z-10 left-0 bottom-0">
-                                        <p class="text-white w-max bg-primaryColor-500 font-medium px-4 py-2 text-sm">
-                                            2 Desember 2025
-                                        </p>
+                                @else
+                                    {{-- Another Item Blog --}}
+                                    <div class="swiper-slide !h-full bg-red-50">
+                                        <div class="relative">
+                                            <img src="{{ asset('/storage/' . $blog->image) }}" alt=""
+                                                class="!w-full !h-full !object-cover" height="250">
+                                            <div class="article-info absolute z-10 left-0 bottom-0">
+                                                <p
+                                                    class="text-white w-max bg-primaryColor-500 font-medium px-4 py-2 text-sm">
+                                                    {{ \Carbon\Carbon::parse($blog->created_at)->format('j F Y') }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h2 class="mt-2 text-darkColor font-semibold text-xl">
+                                            {{ $blog->title }}
+                                        </h2>
                                     </div>
-                                </div>
-                                <h2 class="mt-2 text-darkColor font-semibold text-xl">
-                                    GIS Mendapatkan Kunci Keberhasilan Satu Data di Bidang Pertanian
-                                </h2>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="relative">
-                                    <img src="{{ asset('/images/blogs/example-1.png') }}" alt="">
-                                    <div class="article-info absolute z-10 left-0 bottom-0">
-                                        <p class="text-white w-max bg-primaryColor-500 font-medium px-4 py-2 text-sm">
-                                            2 Desember 2025
-                                        </p>
-                                    </div>
-                                </div>
-                                <h2 class="mt-2 text-darkColor font-semibold text-xl">
-                                    GIS Mendapatkan Kunci Keberhasilan Satu Data di Bidang Pertanian
-                                </h2>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="relative">
-                                    <img src="{{ asset('/images/blogs/example-1.png') }}" alt="">
-                                    <div class="article-info absolute z-10 left-0 bottom-0">
-                                        <p class="text-white w-max bg-primaryColor-500 font-medium px-4 py-2 text-sm">
-                                            2 Desember 2025
-                                        </p>
-                                    </div>
-                                </div>
-                                <h2 class="mt-2 text-darkColor font-semibold text-xl">
-                                    GIS Mendapatkan Kunci Keberhasilan Satu Data di Bidang Pertanian
-                                </h2>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="relative">
-                                    <img src="{{ asset('/images/blogs/example-1.png') }}" alt="">
-                                    <div class="article-info absolute z-10 left-0 bottom-0">
-                                        <p class="text-white w-max bg-primaryColor-500 font-medium px-4 py-2 text-sm">
-                                            2 Desember 2025
-                                        </p>
-                                    </div>
-                                </div>
-                                <h2 class="mt-2 text-darkColor font-semibold text-xl">
-                                    GIS Mendapatkan Kunci Keberhasilan Satu Data di Bidang Pertanian
-                                </h2>
-                            </div>
+                                @endif
+                            @endforeach
                         </div>
                         <!-- Pagination -->
                         <div class="swiper-pagination"></div>
